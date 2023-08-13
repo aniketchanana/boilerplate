@@ -1,0 +1,16 @@
+{
+  "name": "@anicode/boilerplate",
+  "version": "1.0.4",
+  "description": "",
+  "bin": "./bin/cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aniketchanana/boilerplate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
