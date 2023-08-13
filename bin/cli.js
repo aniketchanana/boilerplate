@@ -14,11 +14,10 @@ try {
     throw Error("Please give some project name");
   }
   const gitClone = `git clone https://github.com/aniketchanana/${projectName}`;
-  const cleanUpCommands = `cd ${projectName} && npm install && rm -rf .git && git init`;
-  console.info("---Cloning repository---");
   runCommand(gitClone);
-  console.info("---installing deps---");
-  runCommand(cleanUpCommands);
+  runCommand(`cd ${projectName} && npm install`);
+  runCommand(`cd ${projectName} && rm -rf .git`);
+  runCommand(`cd ${projectName} && git init`);
 } catch (e) {
   console.error(e.message);
   process.exit(-1);
